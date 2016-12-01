@@ -79,20 +79,22 @@
   </div>
 </div>
 
-<div class="container top20px">
-  <div class="row">
-    <div class="popup-gallery">
-      <?php foreach($imagens as $foto){ ?>
-        <a href="image/<?php echo $foto['foto']; ?>">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 bottom10px img-link">
-            <div class="img-galery" style="background: url('image/<?php echo $foto['foto']; ?>')no-repeat;background-size: cover;background-position: center;">
+<?php if($imagens){ ?>
+  <div class="container top20px">
+    <div class="row">
+      <div class="popup-gallery">
+        <?php foreach($imagens as $foto){ ?>
+          <a href="image/<?php echo $foto['foto']; ?>">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 bottom10px img-link">
+              <div class="img-galery" style="background: url('image/<?php echo $foto['foto']; ?>')no-repeat;background-size: cover;background-position: center;">
+              </div>
+              <div class="text-galery"><?php echo $foto['titulo_foto']; ?></div>
             </div>
-            <div class="text-galery"><?php echo $foto['titulo_foto']; ?></div>
-          </div>
-        </a>
-      <?php } ?>
+          </a>
+        <?php } ?>
+      </div>
     </div>
   </div>
-</div>
+<?php } ?>
 
 <?php echo $footer; ?>
