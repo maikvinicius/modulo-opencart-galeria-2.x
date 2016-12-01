@@ -79,7 +79,7 @@
   </div>
 </div>
 
-<?php if($imagens){ ?>
+<?php if(isset($imagens)){ ?>
   <div class="container top20px">
     <div class="row">
       <div class="popup-gallery">
