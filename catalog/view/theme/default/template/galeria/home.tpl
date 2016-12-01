@@ -84,7 +84,7 @@
     <div class="row">
       <div class="popup-gallery">
         <?php foreach($imagens as $foto){ ?>
-          <a href="image/<?php echo $foto['foto']; ?>">
+          <a href="image/<?php echo $foto['foto']; ?>" title="<?php echo $foto['titulo_foto']; ?>">
             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 bottom10px img-link">
               <div class="img-galery" style="background: url('image/<?php echo $foto['foto']; ?>')no-repeat;background-size: cover;background-position: center;">
               </div>
